@@ -39,10 +39,12 @@ nav .nav-items li {
 nav .nav-items li a {
   color: #fff;
   font-size: 18px;
+  transition: all 0.2s ease;
 }
 
 nav .nav-items li a:hover {
   color: #dd2d2d;
+  transition: all 0.2s ease;
 }
 nav form {
   display: flex;
@@ -70,9 +72,7 @@ nav form button {
   border-radius: 2px;
   cursor: pointer;
 }
-nav form button:hover {
-  background: #dd2d2d;
-}
+
 nav .menu-icon,
 nav .cancel-icon,
 nav .search-icon {
@@ -113,7 +113,7 @@ nav .search-icon {
     text-align: center;
     background: #14181f;
     display: inline-block;
-    transition: left 0.3s ease;
+    transition: left 2s ease;
   }
   nav .nav-items.active {
     left: 0px;
@@ -178,6 +178,16 @@ nav .search-icon {
     display: block;
   }
 }
+
+@media (max-width: 500px) {
+  nav .logo a {
+    font-size: 25px;
+  }
+  nav {
+    height: 50px;
+  }
+}
+
 .content {
   position: absolute;
   top: 50%;
@@ -389,37 +399,40 @@ h1 {
   float: left;
   width: 33.33%;
   padding: 25px;
+  transition: 0.5s;
 }
 
 p {
   opacity: 0;
   margin-top: 10px;
   font-size: 20px;
+  opacity: 0;
+  transition: 0.3s;
+  text-align: center;
 }
 
 .categorie:hover {
   transform: scale(1.05);
-  transition: 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .categorie:hover p {
   opacity: 1;
   text-align: center;
   margin-top: 0px;
-  transition: 0.5s;
+  transition: all 0.3s ease;
 }
 
 .deuxiemetrait {
   height: 2px;
   width: 82%;
-  margin: -15px auto;
+  margin: -20px auto;
   background-color: rgb(0, 0, 0);
   margin-bottom: 40px;
 }
 
 @media (max-width: 900px) {
   .les-collections {
-    padding-top: 10px;
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -427,7 +440,16 @@ p {
     padding: 20px;
   }
 }
-
+@media (max-width: 800px) {
+  .categorie p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 553px) {
+  .categorie p {
+    margin-top: -10px;
+  }
+}
 @media (max-width: 480px) {
   .les-collections {
     padding-top: 5px;
@@ -436,6 +458,10 @@ p {
   }
   .categorie {
     padding: 10px;
+  }
+  .categorie p {
+    font-size: 10px;
+    margin-top: 20px;
   }
   h2 {
     font-size: 15px;
