@@ -115,12 +115,14 @@ nav .search-icon {
     height: 100%;
     padding: 10px 50px 0 50px;
     text-align: center;
-    background: #14181f;
+    background: #2f3136;
     display: inline-block;
     transition: left 1s ease;
   }
+
   nav .nav-items.active {
     left: 0px;
+    position: fixed;
   }
   nav .nav-items li {
     line-height: 40px;
@@ -442,7 +444,7 @@ h1 {
 .premiertrait {
   height: 2px;
   width: 82%;
-  margin: 0px auto;
+  margin: 5px auto;
   background-color: rgb(0, 0, 0);
 }
 
