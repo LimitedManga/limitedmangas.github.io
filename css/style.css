@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
 * {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   outline: none;
   box-sizing: border-box;
@@ -11,6 +11,9 @@
 
 body {
   background: gainsboro;
+  width: 100%;
+  margin: auto;
+  padding: 0;
 }
 
 /************************************************** NAVBAR *******************************************/
@@ -21,6 +24,7 @@ nav {
   align-items: center;
   height: 70px;
   padding: 0 100px;
+  width: 100%;
 }
 nav .logo a {
   color: #fff;
@@ -362,6 +366,7 @@ nav .logo.space {
 
 .dot-3 {
   padding-bottom: 40px;
+  margin-top: -15px;
 }
 
 /* The dots/bullets/indicators */
@@ -389,23 +394,20 @@ nav .logo.space {
   animation-duration: 1.5s;
 }
 
-@media (max-width: 980px) {
-  .dot-3 {
-    margin: -10px;
-  }
-}
 @media (max-width: 480px) {
   .dot-3 {
     padding-bottom: 20px;
-  }
-}
-@media (max-width: 400px) {
-  .dot-3 {
-    margin: -15px;
+    margin-top: -20px;
   }
   .dot {
-    height: 13px;
-    width: 13px;
+    height: 11px;
+    width: 11px;
+  }
+}
+
+@media (max-width: 400px) {
+  .dot-3 {
+    margin-top: -20px;
   }
 }
 
