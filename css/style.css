@@ -315,8 +315,8 @@ nav .logo.space {
 
 /* Slideshow container */
 .slideshow-container {
-  padding-top: 25px;
-  max-width: 95%;
+  padding-top: px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -324,6 +324,9 @@ nav .logo.space {
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+.mySlides img {
+  width: 100%;
 }
 
 /* Next & previous buttons */
@@ -404,6 +407,11 @@ nav .logo.space {
   .dot {
     height: 11px;
     width: 11px;
+  }
+  .mySlides img {
+    width: 150%;
+    margin-left: -25%;
+    background-size: contain;
   }
 }
 
