@@ -413,11 +413,14 @@ nav .logo.space {
   }
   .mySlides img {
     width: 100%;
-    height: 550px;
+    height: 500px;
     object-fit: cover;
   }
   .slide1 {
     content: url("../img/slider1_tel.jpeg");
+  }
+  .slide2 {
+    content: url("../img/slider2_tel.png");
   }
   .slide3 {
     content: url("../img/slider3_tel.png");
