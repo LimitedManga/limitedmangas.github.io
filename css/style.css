@@ -547,8 +547,8 @@ p {
   .collectors {
     content: url("../img/collectors_hover.png");
   }
-  .mangas {
-    content: url("../img/manga_hover.png");
+  .autrecollectors {
+    content: url("../img/autre_collectors_hover.png");
   }
   .artbooks {
     content: url("../img/artbooks_hover.png");
